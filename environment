@@ -10,7 +10,7 @@ env_name = '' # set environment name here
 
 
 class Set_env():
-    def __init__(self,node,train_or_test,has_continuous_action_space, load_pt_file_name, continue_training):
+    def __init__(self,node,train_or_test,has_continuous_action_space, continue_training , load_pt_file_name ):
         # torch.set_num_threads(6)
         if train_or_test !='test':
             from scenecreater import createScene
@@ -78,8 +78,8 @@ class Set_env():
 
 
 class Env(Set_env):
-    def __init__(self, node, train_or_test,has_continuous_action_space , load_pt_file_name, continue_training = False):
-        super(Env, self).__init__(node, train_or_test,has_continuous_action_space, load_pt_file_name, continue_training)
+    def __init__(self, node, train_or_test,has_continuous_action_space , continue_training , load_pt_file_name):
+        super(Env, self).__init__(node, train_or_test,has_continuous_action_space, continue_training , load_pt_file_name)
 
     def step(self, a):
         for i in range(self.multi_animate_step):
@@ -94,9 +94,9 @@ class Env(Set_env):
     def reset(self):
         obs, value_states = super().reset()
         return obs, value_states
-    
-    
-    
+
+
+
 
 def train(env):
     writer=SummaryWriter()
