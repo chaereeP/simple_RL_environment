@@ -7,7 +7,7 @@ There are several variables:
 2. continuous / discrete action
 3. use different state for value and action function ( denoted as value_state and state, respectively.)
 
-If you want to implement RL algorithms for other simulation environments, you just need to revise "Set_env" class in "environment.py file.
+If you want to implement RL algorithms for other simulation environments, you just need to revise "Set_env" class in "environment.py" file.
 
 ## Algorithms Implemented
 | Command    | Description                                    |
