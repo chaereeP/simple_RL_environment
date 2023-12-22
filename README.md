@@ -9,7 +9,7 @@ There are several variables:
 
 If you want to implement RL algorithms for other simulation environments, you just need to revise "Set_env" class in "environment.py" file.
 
-Run code using 
+ How to run code : 
 
     python main.py
 
