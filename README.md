@@ -1,5 +1,5 @@
 # simple_RL_framework_for simulation
-Still working on revising the code for clarity.
+(Still working on revising the code for clarity.)
 
 Implementations of some basic RL algorithms with simple codes in Pytorch.
 There are several variables:
@@ -8,6 +8,9 @@ There are several variables:
 3. use different state for value and action function ( denoted as value_state and state, respectively.)
 
 If you want to implement RL algorithms for other simulation environments, you just need to revise "Set_env" class in "environment.py" file.
+Run code using 
+
+    python main.py
 
 ## Algorithms Implemented
 | Command    | Description                                    |
