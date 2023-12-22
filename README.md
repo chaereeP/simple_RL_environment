@@ -3,7 +3,7 @@
 
 Implementations of some basic RL algorithms with simple codes in Pytorch.
 There are several variables:
-1. algorithms,
+1. algorithms (PPO, PPO-LSTM, SAC)
 2. continuous / discrete action
 3. use different state for value and action function ( denoted as value_state and state, respectively.)
 
