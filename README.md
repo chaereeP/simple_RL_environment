@@ -1,12 +1,17 @@
 # simple_RL_framework_for simulation
-(Still working on revising the code for clarity.)
-
 Implementations of some basic RL algorithms with simple codes in Pytorch.
-There are several variables:
-1. algorithms (PPO, PPO-LSTM, SAC)
-2. continuous / discrete action
-3. use different state for value and action function ( denoted as value_state and state, respectively.)
 
+### Features:
+- **Algorithms**:
+  - Proximal Policy Optimization (PPO)
+  - PPO with LSTM integration (PPO-LSTM)
+  - Soft Actor-Critic (SAC)
+- **Action Spaces**:
+  - Supports both continuous and discrete action spaces.
+- **Modularity**:
+  - Easily adaptable to other simulation environments by modifying the `Set_env` class in `environment.py`.
+
+## Run code
 If you want to implement RL algorithms for other simulation environments, you just need to revise "Set_env" class in "environment.py" file.
 
  How to run code : 
