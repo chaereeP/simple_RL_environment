@@ -10,7 +10,7 @@ env_name = '' # set environment name here
 
 
 class Set_env():
-    def __init__(self,node,train_or_test,has_continuous_action_space, continue_training , load_pt_file_name ):
+    def __init__(self,node,train_or_test,has_continuous_action_space, continuous_training , load_pt_file_name ):
         # torch.set_num_threads(6)
         if train_or_test !='test':
             from scenecreater import createScene
